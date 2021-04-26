@@ -1,0 +1,129 @@
+Runtime
+-------
+
+1. Runtime for does_string_contain_letter:
+
+O(n)
+
+
+
+2. Runtime for duplicate_letters:
+O(nm) best case
+O(n^2 *m) worst case
+
+where n is length of string 1
+and m is length of string 2
+
+
+3. Runtime for duplicate_letters2:
+
+O(n+m)
+whwere n is the length of string2
+and m is the length of string 1
+
+
+
+Stacks and Queues
+-----------------
+
+
+1. Which would be a better data structure for creating a Stack: a Linked List or
+   a built-in Python list? Explain why, referencing the runtime requirements for
+   Stack operations (push, pop, etc).
+
+   If we implent using built-in python list it will have constant runtimecomplexity O(1) for pushing and for popping
+    an element at the end of the list.
+
+    if we implement using Linked list it will have constant run time complexity O(1) for adding
+     or removing an item at the begining of the list.
+
+
+
+2. Which would be a better data structure for creating a Queue: a Linked List or
+   a built-in Python list? Explain why, referencing the runtime requirements for
+   Queue methods (enqueue, dequeue, etc).
+
+   Linked list would be a better data structure for creating a Queue because it has a O(1) constant
+   times runtime for adding or removing an item at the begining or end of the list.
+
+   Runtime complexity of enqueue will be O(1).
+   Runtime complexity of dequeue will be O(1).
+
+
+
+
+Trees
+-----
+
+1. Using the diagram in the instructions, in what order would a Breadth First
+   Search (BFS) algorithm visit each node  until finding burritos (starting at
+   food)?
+
+   List starts off as [food]
+
+   Not him, so add his children: [Italian, Indian, Mexican]
+
+   Pop italian, not him, so add his child: [Indian, Mexican, lasagna, pizza]
+
+   Pop Indian, not him, so add its children: [Mexican, lasagna, pizza,tikka masala, saag]
+
+   Pop Mexican, not him, so add his child: [lasagna, pizza,tikka masala, saag, burritos, tacos]
+
+   Pop lasagna, not him, so add his child: [pizza,tikka masala, saag, burritos, tacos]
+]
+
+   Pop pizza, not him, so add his children: [tikka masala, saag, burritos, tacos, thin crust, Chicago-style, NewYork-style, Sicillian ]
+
+   pop tikka masala, not him so add its children :[saag, burritos, tacos, thin crust, Chicago-style, NewYork-style, Sicillian]
+
+   pop saag, not him so add its children :[burritos, tacos, thin crust, Chicago-style, NewYork-style, Sicillian]
+
+   pop burritos: We found burritos !!!
+
+
+2. Using the diagram in the instructions, In what order would a Depth First
+   Search (DFS) algorithm visit each node until finding Chicago-style (starting
+   at food)?
+
+   List starts off as [food]
+
+ [Italian, Indian, Mexican]
+
+
+ [Italian, Indian, burritos, tacos,enchilladas ]
+
+ [Italian,Indian, burritos, tacos ]
+
+ [Italian,Indian, burritos]
+
+ [Italian,Indian]
+
+ [Italian, tikka masala , saag ]
+
+ [Italian, tikka masala]
+
+ [Italian]
+
+ [lasagna, pizza]
+
+ [lasagna, Chicago-style, NewYork style, Sicillian ]
+
+
+ [lasagna, Chicago-style, NewYork style]
+
+
+ [lasagna, Chicago-style]
+
+ Found chicago style !!!
+
+
+
+
+
+
+
+
+
+
+
+
